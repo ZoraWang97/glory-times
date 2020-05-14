@@ -81,19 +81,22 @@ button{
   flex-wrap: wrap;
   padding-right: 10px;
 }
-.comtent--blocks{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
 .content--title{
   color: bisque;
   font-size: 18px;
-  text-align: left;
+  text-align: middle;
+  width: 100%;
   padding: 20px 0 0 30px;
   margin-left: 20px;
+  margin-right: 20px;
   border-bottom:2px solid bisque;
+}
+.content--blocks{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
 }
 .content--picComponent{
   width: 23%;

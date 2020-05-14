@@ -73,73 +73,75 @@ function App() {
           </div>
 
           <div className="content--picsArea">
-            <div className="content--blocks">
-              <p id="newArrivals"className="content--title">! New Arrivals !</p>
-              <img className='content--picComponent' src={SkyHunter}></img>
-              <img className='content--picComponent' src={MountMist}></img>
-              <img className='content--picComponent' src={TreeSnowMist}></img>
-              <img className='content--picComponent' src={TreeSnowSun}></img>
-              <img className='content--picComponent' src={FieldSunset}></img>
-              <img className='content--picComponent' src={SkyHunter}></img>
-              <img className='content--picComponent' src={MountMist}></img>
-              <img className='content--picComponent' src={Twig}></img>
-            </div>
 
-            <div className="content--blocks">
+            <p id="newArrivals"className="content--title">❕New Arrivals ❕</p>
+              <div className="content--blocks">
+                <img className='content--picComponent' src={SkyHunter}></img>
+                <img className='content--picComponent' src={MountMist}></img>
+                <img className='content--picComponent' src={TreeSnowMist}></img>
+                <img className='content--picComponent' src={TreeSnowSun}></img>
+                <img className='content--picComponent' src={FieldSunset}></img>
+                <img className='content--picComponent' src={SkyHunter}></img>
+                <img className='content--picComponent' src={MountMist}></img>
+                <img className='content--picComponent' src={Twig}></img>
+              </div>
+
               <p id="livingRoom"className="content--title">~ Living Room ~</p>
-              <img className='content--picComponent' src={FieldSunset}></img>
-              <img className='content--picComponent' src={MountMist}></img>
-              <img className='content--picComponent' src={SkyHunter}></img>
-              <img className='content--picComponent' src={TreeSnowMist}></img>
-              <img className='content--picComponent' src={TreeSnowSun}></img>
-              <img className='content--picComponent' src={Twig}></img>
-              <img className='content--picComponent' src={FieldSunset}></img>
-              <img className='content--picComponent' src={MountMist}></img>
-              <img className='content--picComponent' src={SkyHunter}></img>
-              <img className='content--picComponent' src={TreeSnowMist}></img>
-              <img className='content--picComponent' src={TreeSnowSun}></img>
-              <img className='content--picComponent' src={Twig}></img>
-              <img className='content--picComponent' src={FieldSunset}></img>
-              <img className='content--picComponent' src={MountMist}></img>
-              <img className='content--picComponent' src={SkyHunter}></img>
-              <img className='content--picComponent' src={TreeSnowMist}></img>
-              <img className='content--picComponent' src={TreeSnowSun}></img>
-              <img className='content--picComponent' src={Twig}></img>
-              <img className='content--picComponent' src={FieldSunset}></img>
-              <img className='content--picComponent' src={MountMist}></img>
-              <img className='content--picComponent' src={SkyHunter}></img>
-              <img className='content--picComponent' src={TreeSnowMist}></img>
-              <img className='content--picComponent' src={TreeSnowSun}></img>
-              <img className='content--picComponent' src={Twig}></img>
-            </div>
+              <div className="content--blocks">
+                <img className='content--picComponent' src={FieldSunset}></img>
+                <img className='content--picComponent' src={MountMist}></img>
+                <img className='content--picComponent' src={SkyHunter}></img>
+                <img className='content--picComponent' src={TreeSnowMist}></img>
+                <img className='content--picComponent' src={TreeSnowSun}></img>
+                <img className='content--picComponent' src={Twig}></img>
+                <img className='content--picComponent' src={FieldSunset}></img>
+                <img className='content--picComponent' src={MountMist}></img>
+                <img className='content--picComponent' src={SkyHunter}></img>
+                <img className='content--picComponent' src={TreeSnowMist}></img>
+                <img className='content--picComponent' src={TreeSnowSun}></img>
+                <img className='content--picComponent' src={Twig}></img>
+                <img className='content--picComponent' src={FieldSunset}></img>
+                <img className='content--picComponent' src={MountMist}></img>
+                <img className='content--picComponent' src={SkyHunter}></img>
+                <img className='content--picComponent' src={TreeSnowMist}></img>
+                <img className='content--picComponent' src={TreeSnowSun}></img>
+                <img className='content--picComponent' src={Twig}></img>
+                <img className='content--picComponent' src={FieldSunset}></img>
+                <img className='content--picComponent' src={MountMist}></img>
+                <img className='content--picComponent' src={SkyHunter}></img>
+                <img className='content--picComponent' src={TreeSnowMist}></img>
+                <img className='content--picComponent' src={TreeSnowSun}></img>
+                <img className='content--picComponent' src={Twig}></img>
+              </div>
 
-            <div className="content--blocks">
               <p id="bedroom" className="content--title">~ Bedroom ~</p>
-              <img className='content--picComponent' src={MountMist}></img>
-              <img className='content--picComponent' src={SkyHunter}></img>
-              <img className='content--picComponent' src={TreeSnowMist}></img>
-              <img className='content--picComponent' src={TreeSnowSun}></img>
-              <img className='content--picComponent' src={Twig}></img>
-              <img className='content--picComponent' src={FieldSunset}></img>
-              <img className='content--picComponent' src={MountMist}></img>
-              <img className='content--picComponent' src={SkyHunter}></img>
-              <img className='content--picComponent' src={TreeSnowMist}></img>
-              <img className='content--picComponent' src={TreeSnowSun}></img>
-              <img className='content--picComponent' src={Twig}></img>
-              <img className='content--picComponent' src={FieldSunset}></img>
-            </div>
+
+              <div className="content--blocks">
+                <img className='content--picComponent' src={MountMist}></img>
+                <img className='content--picComponent' src={SkyHunter}></img>
+                <img className='content--picComponent' src={TreeSnowMist}></img>
+                <img className='content--picComponent' src={TreeSnowSun}></img>
+                <img className='content--picComponent' src={Twig}></img>
+                <img className='content--picComponent' src={FieldSunset}></img>
+                <img className='content--picComponent' src={MountMist}></img>
+                <img className='content--picComponent' src={SkyHunter}></img>
+                <img className='content--picComponent' src={TreeSnowMist}></img>
+                <img className='content--picComponent' src={TreeSnowSun}></img>
+                <img className='content--picComponent' src={Twig}></img>
+                <img className='content--picComponent' src={FieldSunset}></img>
+              </div>
 
 
-            <div className="content--blocks">
-              <p id="kitchen" className="content--title">~ Kitchen ~</p>
-              <img className='content--picComponent' src={FieldSunset}></img>
-              <img className='content--picComponent' src={MountMist}></img>
-              <img className='content--picComponent' src={SkyHunter}></img>
-              <img className='content--picComponent' src={TreeSnowMist}></img>
-              <img className='content--picComponent' src={TreeSnowSun}></img>
-              <img className='content--picComponent' src={Twig}></img>
+              <div className="content--blocks">
+                <p id="kitchen" className="content--title">~ Kitchen ~</p>
+                <img className='content--picComponent' src={FieldSunset}></img>
+                <img className='content--picComponent' src={MountMist}></img>
+                <img className='content--picComponent' src={SkyHunter}></img>
+                <img className='content--picComponent' src={TreeSnowMist}></img>
+                <img className='content--picComponent' src={TreeSnowSun}></img>
+                <img className='content--picComponent' src={Twig}></img>
+              </div>
             </div>
-          </div>
         </div>
 
         <div className="info">
