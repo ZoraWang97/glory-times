@@ -26,7 +26,7 @@ function App() {
       picSize: '120x160',
       rrpPrice: '$120',
       picType:'Print',
-      nowPrice: '$100',
+      nowPrice: '',
       picSrc: SkyHunter
     },{
       id: 2,
@@ -34,7 +34,7 @@ function App() {
       picSize: '100x130',
       rrpPrice: '$100',
       picType:'Water',
-      nowPrice: '$90',
+      nowPrice: '',
       picSrc: TreeSnowSun
     },{
       id: 3,
@@ -42,7 +42,7 @@ function App() {
       picSize: '90x150',
       rrpPrice: '$140',
       picType:'Print',
-      nowPrice: '$120',
+      nowPrice: '',
       picSrc: FieldSunset
     },{
       id: 4,
@@ -50,7 +50,7 @@ function App() {
       picSize: '100x160',
       rrpPrice: '$150',
       picType:'Oil',
-      nowPrice: '$130',
+      nowPrice: '',
       picSrc: TreeSnowMist
     },{
       id: 5,
@@ -58,7 +58,7 @@ function App() {
       picSize: '90x150',
       rrpPrice: '$140',
       picType:'Print',
-      nowPrice: '$120',
+      nowPrice: '',
       picSrc: FieldSunset
     },{
       id: 6,
@@ -66,7 +66,7 @@ function App() {
       picSize: '100x160',
       rrpPrice: '$150',
       picType:'Oil',
-      nowPrice: '$130',
+      nowPrice: '',
       picSrc: MountMist
     },{
       id: 7,
@@ -74,7 +74,7 @@ function App() {
       picSize: '120x160',
       rrpPrice: '$120',
       picType:'Print',
-      nowPrice: '$100',
+      nowPrice: '',
       picSrc: SkyHunter
     }
   ];

@@ -84,7 +84,7 @@ button:hover{
 }
 .content--sortTypes:hover{
   color:  rgb(218, 208, 153);
-  border: 2px solid rgb(218, 208, 153);
+  border: 1px solid rgb(218, 208, 153);
   border-radius: 100%;
 }
 .content--TOPclick{
@@ -125,8 +125,7 @@ button:hover{
   margin-bottom: 60px;
 }
 .content--picComponent{
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   width: 23%;
   margin: 0.5% 0 0 1%;
   /* border: 2px solid rgb(182, 202, 202); */
@@ -146,6 +145,7 @@ button:hover{
 .content--picComponentPrice{
   font-size: 0.95em;
   color: rgb(222, 228, 228);
+  text-align: right;
 }
 .content--picComponentPriceRRP{
   color: blanchedalmond;
