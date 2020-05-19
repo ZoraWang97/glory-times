@@ -5,15 +5,15 @@
 .container{
   display: block;
 }
+
+
 .nav{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: rgb(54, 54, 49);
-  position: relative;
+  background: rgb(63, 63, 58);
 }
-
 .nav--logoName{
   display: flex;
   align-items: center;
@@ -38,77 +38,119 @@
   padding-right: 40px;
 }
 .nav--click{
-
   color:rgb(183, 199, 174);
-  /* color: rgb(182, 202, 202); */
   margin-right: 30px;
   font-size: 18px;
 }
-
+.nav--click:hover{
+  color: bisque;
+  text-decoration-color: wheat;
+}
 button{
-  color:  rgb(182, 202, 202);;
+  color:  rgb(182, 202, 202);
   background-color:  darkslategray;
   border-color:  darkslategray;
   border-radius: 10%;
   padding: 5px  10px;
   font-size: 16px;
+  outline: none;
 }
+button:hover{
+  background-color:rgb(182, 202, 202);
+  color: darkslategray;
+}
+
+
 .content{
   display: flex;
   flex-direction: row;
-  background-color: darkslategray;
+  background-color: rgb(81, 96, 112);
 }
 .content--sort{
  display: flex;
  flex-direction: column;
- padding-top: 10px;
- position: relative;
+ padding-top: 18px;
+ align-items: center;
 }
 .content--sortTypes{
   box-sizing: border-box;
   border-bottom: 2px solid rgb(183, 199, 174);
-  border-radius: 10px;
+  border-radius: 10%;
   width: 140px;
-  padding: 16px 0 8px 0;
+  padding: 8px 0 8px 0;
   margin: 12px 0;
-  color: rgb(182, 202, 202);
+  color: rgb(222, 228, 228);
   font-size: 18px;
-  
+}
+.content--sortTypes:hover{
+  color:  bisque;
+  border: 1px solid bisque;
+  border-radius: 100%;
+}
+.content--TOPclick{
+  position: fixed;
+  left: 2%;
+  bottom: 3%;
+  color: rgb(182, 202, 202);
+  border: 2px solid rgb(182, 202, 202);
+  border-radius: 20%;
+  padding: 4px 8px; 
+}
+.content--TOPclick:hover{
+  background-color:rgb(182, 202, 202);
+  color:darkslategray;
 }
 .content--picsArea{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding-right: 10px;
+  padding-bottom: 10px;
 }
 .content--title{
-  color: bisque;
-  font-size: 18px;
+  color: rgb(243, 220, 192);
+  font-size: 22px;
   text-align: middle;
   width: 100%;
   padding: 20px 0 0 30px;
   margin-left: 20px;
   margin-right: 20px;
-  border-bottom:2px solid bisque;
+  border-bottom:2px solid rgb(243, 220, 192);
 }
 .content--blocks{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
 }
 .content--picComponent{
+  display: flex;
+  flex-wrap: wrap;
   width: 23%;
   margin: 0.5% 0 0 1%;
+  /* border: 2px solid rgb(182, 202, 202); */
 }
+.content--picComponentPic{
+  width: 100%;
+}
+.content--picComponentInfo{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+.content--picComponentInfoItem{
+  font-size: 0.8em;
+  margin-left: 5px;
+  color: rgb(222, 228, 228);
+}
+
 
 .info{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 100px 0 100px 0 ;
-  background: rgb(63, 70, 58);
+  background: rgb(63, 63, 58);
   color: rgb(130, 141, 124);
   font-weight: normal;
 }
@@ -117,7 +159,6 @@ button{
   box-sizing: border-box;
   flex-direction: row;
 }
-
 .info--contact{
   display: flex;
   flex-direction: column;
@@ -130,7 +171,7 @@ ul{
   font-weight: bold;
   display: flex;
   justify-content: left;
-  color:  rgb(183, 199, 174);
+  color:  rgb(233, 206, 173);
 }
 li{
   display: flex;
@@ -138,14 +179,18 @@ li{
   /* font-size: 17px; */
   padding-left: 30px;
   padding-bottom: 5px;
-
 }
 text{
   font-weight: bold;
 }
-
+a{
+  text-decoration-color: transparent;
+}
 .info--link{
   color: rgb(106, 144, 214);
+}
+.info--link:hover{
+  color: rgb(159, 188, 241);
 }
 .info--logo{
   width: auto;

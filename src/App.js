@@ -3,6 +3,7 @@ import GloryTimesLogo from './pics/GloryTimesLogo.jpg';
 import Facebook from './pics/facebook.png';
 import Paypal from './pics/paypal.png';
 import Banktransfer from './pics/banktransfer.png';
+
 /* ⬇  从这开始就是展示的画了，从 ./pics/文件夹导入 */
 import FieldSunset from './pics/FieldSunset.jpg';
 import MountMist from './pics/MountMist.jpg';
@@ -13,46 +14,299 @@ import Twig from './pics/Twig.png';
 /* ⬆ */
 
 import './App.css';
+import Pictures from './Pictures';
 
 function App() {
-  const pics= [
+
+  /* New Arrivals (product info table) */
+  const newArrivals = [
     {
-      picNum: '001',
+      id: 1,
       picName: 'SkyHunter',
-      picSize: '100 x 160',
+      picSize: '120x160',
       picRRP: '$120',
-      picType:'',
-      nowPrice: '$100'
+      picType:'Print',
+      nowPrice: '$100',
+      picSrc: SkyHunter
     },{
-      picNum: '001',
-      picName: 'SkyHunter',
-      picSize: '100 x 160',
-      picRRP: '$120',
-      picType:'',
-      nowPrice: '$100'
+      id: 2,
+      picName: 'TreeSnowSun',
+      picSize: '100x130',
+      picRRP: '$100',
+      picType:'Water',
+      nowPrice: '$90',
+      picSrc: TreeSnowSun
     },{
-      picNum: '001',
-      picName: 'SkyHunter',
-      picSize: '100 x 160',
-      picRRP: '$120',
-      picType:'',
-      nowPrice: '$100'
+      id: 3,
+      picName: 'FieldSunset',
+      picSize: '90x150',
+      picRRP: '$140',
+      picType:'Print',
+      nowPrice: '$120',
+      picSrc: FieldSunset
     },{
-      picNum: '001',
+      id: 4,
+      picName: 'TreeSnowMist',
+      picSize: '100x160',
+      picRRP: '$150',
+      picType:'Oil',
+      nowPrice: '$130',
+      picSrc: TreeSnowMist
+    },{
+      id: 5,
+      picName: 'FieldSunset',
+      picSize: '90x150',
+      picRRP: '$140',
+      picType:'Print',
+      nowPrice: '$120',
+      picSrc: FieldSunset
+    },{
+      id: 6,
+      picName: 'MountMist',
+      picSize: '100x160',
+      picRRP: '$150',
+      picType:'Oil',
+      nowPrice: '$130',
+      picSrc: MountMist
+    },{
+      id: 7,
       picName: 'SkyHunter',
-      picSize: '100 x 160',
+      picSize: '120x160',
       picRRP: '$120',
-      picType:'',
-      nowPrice: '$100'
+      picType:'Print',
+      nowPrice: '$100',
+      picSrc: SkyHunter
     }
-  ]
+  ];
+
+  const newList = newArrivals.map(pic => <Pictures key={pic.id} pic={pic} />);
+
+
+  /* Living Room (product info table) */
+  const livingRoom = [
+    {
+      id: 1,
+      picName: 'SkyHunter',
+      picSize: '120x160',
+      picRRP: '$120',
+      picType:'Print',
+      nowPrice: '$100',
+      picSrc: SkyHunter
+    },{
+      id: 2,
+      picName: 'TreeSnowSun',
+      picSize: '100x130',
+      picRRP: '$100',
+      picType:'Water',
+      nowPrice: '$90',
+      picSrc: TreeSnowSun
+    },{
+      id: 3,
+      picName: 'FieldSunset',
+      picSize: '90x150',
+      picRRP: '$140',
+      picType:'Print',
+      nowPrice: '$120',
+      picSrc: FieldSunset
+    },{
+      id: 4,
+      picName: 'TreeSnowMist',
+      picSize: '100x160',
+      picRRP: '$150',
+      picType:'Oil',
+      nowPrice: '$130',
+      picSrc: TreeSnowMist
+    },{
+      id: 5,
+      picName: 'MountMist',
+      picSize: '100x160',
+      picRRP: '$150',
+      picType:'Oil',
+      nowPrice: '$130',
+      picSrc: MountMist
+    },{
+      id: 7,
+      picName: 'SkyHunter',
+      picSize: '120x160',
+      picRRP: '$120',
+      picType:'Print',
+      nowPrice: '$100',
+      picSrc: SkyHunter
+    },{
+      id: 8,
+      picName: 'TreeSnowSun',
+      picSize: '100x130',
+      picRRP: '$100',
+      picType:'Water',
+      nowPrice: '$90',
+      picSrc: TreeSnowSun
+    },{
+      id: 9,
+      picName: 'FieldSunset',
+      picSize: '90x150',
+      picRRP: '$140',
+      picType:'Print',
+      nowPrice: '$120',
+      picSrc: FieldSunset
+    },{
+      id: 6,
+      picName: 'Twig',
+      picSize: '100x160',
+      picRRP: '$150',
+      picType:'Oil',
+      nowPrice: '$130',
+      picSrc: Twig
+    },{
+      id: 10,
+      picName: 'TreeSnowMist',
+      picSize: '100x160',
+      picRRP: '$150',
+      picType:'Oil',
+      nowPrice: '$130',
+      picSrc: TreeSnowMist
+    },{
+      id: 11,
+      picName: 'MountMist',
+      picSize: '100x160',
+      picRRP: '$150',
+      picType:'Oil',
+      nowPrice: '$130',
+      picSrc: MountMist
+    },{
+      id: 12,
+      picName: 'Twig',
+      picSize: '100x160',
+      picRRP: '$150',
+      picType:'Oil',
+      nowPrice: '$130',
+      picSrc: Twig
+    }
+  ];
+
+  const livingList = livingRoom.map(pic => <Pictures key={pic.id} pic={pic} />);
+
+
+  /* Bedroom (product info table) */
+  const bedroom = [
+    {
+      id: 1,
+      picName: 'SkyHunter',
+      picSize: '120x160',
+      picRRP: '$120',
+      picType:'Print',
+      nowPrice: '$100',
+      picSrc: SkyHunter
+    },{
+      id: 2,
+      picName: 'TreeSnowSun',
+      picSize: '100x130',
+      picRRP: '$100',
+      picType:'Water',
+      nowPrice: '$90',
+      picSrc: TreeSnowSun
+    },{
+      id: 3,
+      picName: 'FieldSunset',
+      picSize: '90x150',
+      picRRP: '$140',
+      picType:'Print',
+      nowPrice: '$120',
+      picSrc: FieldSunset
+    },{
+      id: 4,
+      picName: 'TreeSnowMist',
+      picSize: '100x160',
+      picRRP: '$150',
+      picType:'Oil',
+      nowPrice: '$130',
+      picSrc: TreeSnowMist
+    },{
+      id: 5,
+      picName: 'MountMist',
+      picSize: '100x160',
+      picRRP: '$150',
+      picType:'Oil',
+      nowPrice: '$130',
+      picSrc: MountMist
+    }
+  ];
+
+  const bedroomList = bedroom.map(pic => <Pictures key={pic.id} pic={pic}/>);
+
+
+  /* Kitchen (product info table)  */
+  const kitchen = [
+    {
+      id: 1,
+      picName: 'SkyHunter',
+      picSize: '120x160',
+      picRRP: '$120',
+      picType:'Print',
+      nowPrice: '$100',
+      picSrc: SkyHunter
+    },{
+      id: 2,
+      picName: 'TreeSnowSun',
+      picSize: '100x130',
+      picRRP: '$100',
+      picType:'Water',
+      nowPrice: '$90',
+      picSrc: TreeSnowSun
+    },{
+      id: 3,
+      picName: 'FieldSunset',
+      picSize: '90x150',
+      picRRP: '$140',
+      picType:'Print',
+      nowPrice: '$120',
+      picSrc: FieldSunset
+    },{
+      id: 4,
+      picName: 'TreeSnowMist',
+      picSize: '100x160',
+      picRRP: '$150',
+      picType:'Oil',
+      nowPrice: '$130',
+      picSrc: TreeSnowMist
+    },{
+      id: 5,
+      picName: 'MountMist',
+      picSize: '100x160',
+      picRRP: '$150',
+      picType:'Oil',
+      nowPrice: '$130',
+      picSrc: MountMist
+    },{
+      id: 6,
+      picName: 'Twig',
+      picSize: '100x160',
+      picRRP: '$150',
+      picType:'Oil',
+      nowPrice: '$130',
+      picSrc: Twig
+    },{
+      id: 7,
+      picName: 'SkyHunter',
+      picSize: '120x160',
+      picRRP: '$120',
+      picType:'Print',
+      nowPrice: '$100',
+      picSrc: SkyHunter
+    }
+  ];
+
+  const kitchenList = kitchen.map(pic => <Pictures key={pic.id} pic={pic} />);
+
+
   return (
-    <div className="App">
+    <div className="App" id="top">
       <div className="container">
+
+
 
         <nav className="nav">
           <span className="nav--logoName">
-            <img src={GloryTimesLogo} className="nav--logo"></img>
+            <img src={GloryTimesLogo} className="nav--logo" ></img>
             <span className="nav--name">Glroy Times</span>
           </span>
           <span className="nav--clicks">
@@ -64,85 +318,43 @@ function App() {
         </nav>
 
 
+
+
         <div className="content">
           <div className="content--sort">
-            <a className="content--sortTypes" href="#newArrivals" onClick={()=>{}}>New Arrivals</a>
-            <a className="content--sortTypes" href="#livingRoom" onClick={()=>{}}>Living room</a>
-            <a className="content--sortTypes" href="#bedroom" onClick={()=>{}}>Bedroom</a>
-            <a className="content--sortTypes" href="#kitchen" onClick={()=>{}}>Kitchen</a>
+            <a className="content--sortTypes" href="#newArrivals">New Arrivals</a>
+            <a className="content--sortTypes" href="#livingRoom">Living room</a>
+            <a className="content--sortTypes" href="#bedroom">Bedroom</a>
+            <a className="content--sortTypes" href="#kitchen">Kitchen</a>
+            <a className="content--TOPclick" href="#top">⬆</a>
           </div>
 
           <div className="content--picsArea">
-
             <p id="newArrivals"className="content--title">❕New Arrivals ❕</p>
               <div className="content--blocks">
-                <img className='content--picComponent' src={SkyHunter}></img>
-                <img className='content--picComponent' src={MountMist}></img>
-                <img className='content--picComponent' src={TreeSnowMist}></img>
-                <img className='content--picComponent' src={TreeSnowSun}></img>
-                <img className='content--picComponent' src={FieldSunset}></img>
-                <img className='content--picComponent' src={SkyHunter}></img>
-                <img className='content--picComponent' src={MountMist}></img>
-                <img className='content--picComponent' src={Twig}></img>
+                {newList}
               </div>
 
               <p id="livingRoom"className="content--title">~ Living Room ~</p>
               <div className="content--blocks">
-                <img className='content--picComponent' src={FieldSunset}></img>
-                <img className='content--picComponent' src={MountMist}></img>
-                <img className='content--picComponent' src={SkyHunter}></img>
-                <img className='content--picComponent' src={TreeSnowMist}></img>
-                <img className='content--picComponent' src={TreeSnowSun}></img>
-                <img className='content--picComponent' src={Twig}></img>
-                <img className='content--picComponent' src={FieldSunset}></img>
-                <img className='content--picComponent' src={MountMist}></img>
-                <img className='content--picComponent' src={SkyHunter}></img>
-                <img className='content--picComponent' src={TreeSnowMist}></img>
-                <img className='content--picComponent' src={TreeSnowSun}></img>
-                <img className='content--picComponent' src={Twig}></img>
-                <img className='content--picComponent' src={FieldSunset}></img>
-                <img className='content--picComponent' src={MountMist}></img>
-                <img className='content--picComponent' src={SkyHunter}></img>
-                <img className='content--picComponent' src={TreeSnowMist}></img>
-                <img className='content--picComponent' src={TreeSnowSun}></img>
-                <img className='content--picComponent' src={Twig}></img>
-                <img className='content--picComponent' src={FieldSunset}></img>
-                <img className='content--picComponent' src={MountMist}></img>
-                <img className='content--picComponent' src={SkyHunter}></img>
-                <img className='content--picComponent' src={TreeSnowMist}></img>
-                <img className='content--picComponent' src={TreeSnowSun}></img>
-                <img className='content--picComponent' src={Twig}></img>
+                {livingList}
               </div>
 
               <p id="bedroom" className="content--title">~ Bedroom ~</p>
-
               <div className="content--blocks">
-                <img className='content--picComponent' src={MountMist}></img>
-                <img className='content--picComponent' src={SkyHunter}></img>
-                <img className='content--picComponent' src={TreeSnowMist}></img>
-                <img className='content--picComponent' src={TreeSnowSun}></img>
-                <img className='content--picComponent' src={Twig}></img>
-                <img className='content--picComponent' src={FieldSunset}></img>
-                <img className='content--picComponent' src={MountMist}></img>
-                <img className='content--picComponent' src={SkyHunter}></img>
-                <img className='content--picComponent' src={TreeSnowMist}></img>
-                <img className='content--picComponent' src={TreeSnowSun}></img>
-                <img className='content--picComponent' src={Twig}></img>
-                <img className='content--picComponent' src={FieldSunset}></img>
+                {bedroomList}
               </div>
 
 
+              <p id="kitchen" className="content--title">~ Kitchen ~</p>
               <div className="content--blocks">
-                <p id="kitchen" className="content--title">~ Kitchen ~</p>
-                <img className='content--picComponent' src={FieldSunset}></img>
-                <img className='content--picComponent' src={MountMist}></img>
-                <img className='content--picComponent' src={SkyHunter}></img>
-                <img className='content--picComponent' src={TreeSnowMist}></img>
-                <img className='content--picComponent' src={TreeSnowSun}></img>
-                <img className='content--picComponent' src={Twig}></img>
+                {kitchenList}
               </div>
             </div>
         </div>
+
+
+
 
         <div className="info">
           <span id = "payment" className="info--payment">
@@ -163,7 +375,10 @@ function App() {
           </span>
           <span id = "contact" className="info--contact">
             <ul>Contact us:</ul>
-            <li>Follow us :&nbsp;<img src={Facebook} className="info--logo"></img>&nbsp;<a href='https://www.facebook.com/glorytimespainting' className="info--link">GloryTimes</a></li>
+            <li>Follow us :&nbsp;
+              <img src={Facebook} className="info--logo"></img>&nbsp;
+              <a href='https://www.facebook.com/glorytimespainting' className="info--link" target="_blank">GloryTimes</a>
+            </li>
             <li>Phone:  +61 434 112 658 (Steven)</li>
             <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+61 434 848 628 (Beth)</li>
             
@@ -174,21 +389,6 @@ function App() {
       </div>
       
     </div>
-      /* <header className="App-header">
-        <p>
-          Welcome to Glory Times
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Contact us
-        </a>
-      </header> */
-    
-
   );
 }
 
