@@ -5,12 +5,13 @@ function Pictures ({pic}){
         <div className='content--picComponent'>
             <img className="content--picComponentPic" src={pic.picSrc}></img>
             <div className="content--picComponentInfo">
-                <span className="content--picComponentInfoItem">Item No:{pic.id}</span>&nbsp;&nbsp;
-                <span className="content--picComponentInfoItem">Name:{pic.picName}</span>&nbsp;&nbsp;
-                <span className="content--picComponentInfoItem">Size:{pic.picSize}</span>&nbsp;&nbsp;
-                <span className="content--picComponentInfoItem">Type:{pic.picType}</span>&nbsp;&nbsp;
-                <span className="content--picComponentInfoItem">RRP:{pic.picRRP}</span>&nbsp;&nbsp;
-                <span className="content--picComponentInfoItem">Now:{pic.nowPrice}</span>
+                <span className="content--picComponentInfoItem">#{pic.id}: {pic.picName}</span>&nbsp;&nbsp;
+                <span className="content--picComponentInfoItem">Size: {pic.picSize}</span>&nbsp;&nbsp;
+                <span className="content--picComponentInfoItem">Type: {pic.picType}</span>
+            </div>
+            <div className="content--picComponentPrice">
+                <span>RRP: <span className="content--picComponentPriceRRP">{pic.rrpPrice}</span></span>&nbsp;&nbsp;
+                <span>Now: <span className="content--picComponentPriceNow">{pic.nowPrice}  </span></span>
             </div>
         </div>
     )

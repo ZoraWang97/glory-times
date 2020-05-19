@@ -21,7 +21,7 @@
 .nav--name{
   font-size: 70px;
   font-weight: 600;
-  color: rgb(197, 186, 120);
+  color: rgb(218, 208, 153);
   margin-left: 30px;
   margin-right: 30px;
 }
@@ -83,8 +83,8 @@ button:hover{
   font-size: 18px;
 }
 .content--sortTypes:hover{
-  color:  bisque;
-  border: 1px solid bisque;
+  color:  rgb(218, 208, 153);
+  border: 2px solid rgb(218, 208, 153);
   border-radius: 100%;
 }
 .content--TOPclick{
@@ -108,20 +108,21 @@ button:hover{
   padding-bottom: 10px;
 }
 .content--title{
-  color: rgb(243, 220, 192);
-  font-size: 22px;
+  color: rgb(218, 208, 153);
+  font-size: 20px;
   text-align: middle;
   width: 100%;
-  padding: 20px 0 0 30px;
+  padding: 16px 0 0 30px;
   margin-left: 20px;
   margin-right: 20px;
-  border-bottom:2px solid rgb(243, 220, 192);
+  border-bottom:2px solid rgb(218, 208, 153);
 }
 .content--blocks{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
 }
 .content--picComponent{
   display: flex;
@@ -137,11 +138,21 @@ button:hover{
   display: flex;
   flex-wrap: wrap;
   margin: 5px;
+  color: rgb(222, 228, 228);
 }
 .content--picComponentInfoItem{
   font-size: 0.8em;
-  margin-left: 5px;
+}
+.content--picComponentPrice{
+  font-size: 0.95em;
   color: rgb(222, 228, 228);
+}
+.content--picComponentPriceRRP{
+  color: blanchedalmond;
+}
+.content--picComponentPriceNow{
+  color:rgb(223, 142, 105);
+  font-weight: bolder;
 }
 
 
@@ -149,7 +160,7 @@ button:hover{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 100px 0 100px 0 ;
+  padding: 80px 0 80px 0 ;
   background: rgb(63, 63, 58);
   color: rgb(130, 141, 124);
   font-weight: normal;
@@ -171,7 +182,7 @@ ul{
   font-weight: bold;
   display: flex;
   justify-content: left;
-  color:  rgb(233, 206, 173);
+  color:  rgb(218, 208, 153);
 }
 li{
   display: flex;

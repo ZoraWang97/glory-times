@@ -24,7 +24,7 @@ function App() {
       id: 1,
       picName: 'SkyHunter',
       picSize: '120x160',
-      picRRP: '$120',
+      rrpPrice: '$120',
       picType:'Print',
       nowPrice: '$100',
       picSrc: SkyHunter
@@ -32,7 +32,7 @@ function App() {
       id: 2,
       picName: 'TreeSnowSun',
       picSize: '100x130',
-      picRRP: '$100',
+      rrpPrice: '$100',
       picType:'Water',
       nowPrice: '$90',
       picSrc: TreeSnowSun
@@ -40,7 +40,7 @@ function App() {
       id: 3,
       picName: 'FieldSunset',
       picSize: '90x150',
-      picRRP: '$140',
+      rrpPrice: '$140',
       picType:'Print',
       nowPrice: '$120',
       picSrc: FieldSunset
@@ -48,7 +48,7 @@ function App() {
       id: 4,
       picName: 'TreeSnowMist',
       picSize: '100x160',
-      picRRP: '$150',
+      rrpPrice: '$150',
       picType:'Oil',
       nowPrice: '$130',
       picSrc: TreeSnowMist
@@ -56,7 +56,7 @@ function App() {
       id: 5,
       picName: 'FieldSunset',
       picSize: '90x150',
-      picRRP: '$140',
+      rrpPrice: '$140',
       picType:'Print',
       nowPrice: '$120',
       picSrc: FieldSunset
@@ -64,7 +64,7 @@ function App() {
       id: 6,
       picName: 'MountMist',
       picSize: '100x160',
-      picRRP: '$150',
+      rrpPrice: '$150',
       picType:'Oil',
       nowPrice: '$130',
       picSrc: MountMist
@@ -72,7 +72,7 @@ function App() {
       id: 7,
       picName: 'SkyHunter',
       picSize: '120x160',
-      picRRP: '$120',
+      rrpPrice: '$120',
       picType:'Print',
       nowPrice: '$100',
       picSrc: SkyHunter
@@ -88,7 +88,7 @@ function App() {
       id: 1,
       picName: 'SkyHunter',
       picSize: '120x160',
-      picRRP: '$120',
+      rrpPrice: '$120',
       picType:'Print',
       nowPrice: '$100',
       picSrc: SkyHunter
@@ -96,7 +96,7 @@ function App() {
       id: 2,
       picName: 'TreeSnowSun',
       picSize: '100x130',
-      picRRP: '$100',
+      rrpPrice: '$100',
       picType:'Water',
       nowPrice: '$90',
       picSrc: TreeSnowSun
@@ -104,7 +104,7 @@ function App() {
       id: 3,
       picName: 'FieldSunset',
       picSize: '90x150',
-      picRRP: '$140',
+      rrpPrice: '$140',
       picType:'Print',
       nowPrice: '$120',
       picSrc: FieldSunset
@@ -112,7 +112,7 @@ function App() {
       id: 4,
       picName: 'TreeSnowMist',
       picSize: '100x160',
-      picRRP: '$150',
+      rrpPrice: '$150',
       picType:'Oil',
       nowPrice: '$130',
       picSrc: TreeSnowMist
@@ -120,7 +120,7 @@ function App() {
       id: 5,
       picName: 'MountMist',
       picSize: '100x160',
-      picRRP: '$150',
+      rrpPrice: '$150',
       picType:'Oil',
       nowPrice: '$130',
       picSrc: MountMist
@@ -128,7 +128,7 @@ function App() {
       id: 7,
       picName: 'SkyHunter',
       picSize: '120x160',
-      picRRP: '$120',
+      rrpPrice: '$120',
       picType:'Print',
       nowPrice: '$100',
       picSrc: SkyHunter
@@ -136,7 +136,7 @@ function App() {
       id: 8,
       picName: 'TreeSnowSun',
       picSize: '100x130',
-      picRRP: '$100',
+      rrpPrice: '$100',
       picType:'Water',
       nowPrice: '$90',
       picSrc: TreeSnowSun
@@ -144,7 +144,7 @@ function App() {
       id: 9,
       picName: 'FieldSunset',
       picSize: '90x150',
-      picRRP: '$140',
+      rrpPrice: '$140',
       picType:'Print',
       nowPrice: '$120',
       picSrc: FieldSunset
@@ -152,7 +152,7 @@ function App() {
       id: 6,
       picName: 'Twig',
       picSize: '100x160',
-      picRRP: '$150',
+      rrpPrice: '$150',
       picType:'Oil',
       nowPrice: '$130',
       picSrc: Twig
@@ -160,7 +160,7 @@ function App() {
       id: 10,
       picName: 'TreeSnowMist',
       picSize: '100x160',
-      picRRP: '$150',
+      rrpPrice: '$150',
       picType:'Oil',
       nowPrice: '$130',
       picSrc: TreeSnowMist
@@ -168,7 +168,7 @@ function App() {
       id: 11,
       picName: 'MountMist',
       picSize: '100x160',
-      picRRP: '$150',
+      rrpPrice: '$150',
       picType:'Oil',
       nowPrice: '$130',
       picSrc: MountMist
@@ -176,7 +176,7 @@ function App() {
       id: 12,
       picName: 'Twig',
       picSize: '100x160',
-      picRRP: '$150',
+      rrpPrice: '$150',
       picType:'Oil',
       nowPrice: '$130',
       picSrc: Twig
@@ -192,7 +192,7 @@ function App() {
       id: 1,
       picName: 'SkyHunter',
       picSize: '120x160',
-      picRRP: '$120',
+      rrpPrice: '$120',
       picType:'Print',
       nowPrice: '$100',
       picSrc: SkyHunter
@@ -200,7 +200,7 @@ function App() {
       id: 2,
       picName: 'TreeSnowSun',
       picSize: '100x130',
-      picRRP: '$100',
+      rrpPrice: '$100',
       picType:'Water',
       nowPrice: '$90',
       picSrc: TreeSnowSun
@@ -208,7 +208,7 @@ function App() {
       id: 3,
       picName: 'FieldSunset',
       picSize: '90x150',
-      picRRP: '$140',
+      rrpPrice: '$140',
       picType:'Print',
       nowPrice: '$120',
       picSrc: FieldSunset
@@ -216,7 +216,7 @@ function App() {
       id: 4,
       picName: 'TreeSnowMist',
       picSize: '100x160',
-      picRRP: '$150',
+      rrpPrice: '$150',
       picType:'Oil',
       nowPrice: '$130',
       picSrc: TreeSnowMist
@@ -224,7 +224,7 @@ function App() {
       id: 5,
       picName: 'MountMist',
       picSize: '100x160',
-      picRRP: '$150',
+      rrpPrice: '$150',
       picType:'Oil',
       nowPrice: '$130',
       picSrc: MountMist
@@ -240,7 +240,7 @@ function App() {
       id: 1,
       picName: 'SkyHunter',
       picSize: '120x160',
-      picRRP: '$120',
+      rrpPrice: '$120',
       picType:'Print',
       nowPrice: '$100',
       picSrc: SkyHunter
@@ -248,7 +248,7 @@ function App() {
       id: 2,
       picName: 'TreeSnowSun',
       picSize: '100x130',
-      picRRP: '$100',
+      rrpPrice: '$100',
       picType:'Water',
       nowPrice: '$90',
       picSrc: TreeSnowSun
@@ -256,7 +256,7 @@ function App() {
       id: 3,
       picName: 'FieldSunset',
       picSize: '90x150',
-      picRRP: '$140',
+      rrpPrice: '$140',
       picType:'Print',
       nowPrice: '$120',
       picSrc: FieldSunset
@@ -264,7 +264,7 @@ function App() {
       id: 4,
       picName: 'TreeSnowMist',
       picSize: '100x160',
-      picRRP: '$150',
+      rrpPrice: '$150',
       picType:'Oil',
       nowPrice: '$130',
       picSrc: TreeSnowMist
@@ -272,7 +272,7 @@ function App() {
       id: 5,
       picName: 'MountMist',
       picSize: '100x160',
-      picRRP: '$150',
+      rrpPrice: '$150',
       picType:'Oil',
       nowPrice: '$130',
       picSrc: MountMist
@@ -280,7 +280,7 @@ function App() {
       id: 6,
       picName: 'Twig',
       picSize: '100x160',
-      picRRP: '$150',
+      rrpPrice: '$150',
       picType:'Oil',
       nowPrice: '$130',
       picSrc: Twig
@@ -288,7 +288,7 @@ function App() {
       id: 7,
       picName: 'SkyHunter',
       picSize: '120x160',
-      picRRP: '$120',
+      rrpPrice: '$120',
       picType:'Print',
       nowPrice: '$100',
       picSrc: SkyHunter
@@ -310,7 +310,7 @@ function App() {
             <span className="nav--name">Glroy Times</span>
           </span>
           <span className="nav--clicks">
-            <span className="nav--click"><button >Login</button>&nbsp;/&nbsp;<button >Register</button></span>
+            {/* <span className="nav--click"><button >Login</button>&nbsp;/&nbsp;<button >Register</button></span> */}
             <a className="nav--click" href="#payment">Payment</a>
             <a className="nav--click" href="#contact">Contacts</a>
             <a className="nav--click" href="#contact">About us</a>
