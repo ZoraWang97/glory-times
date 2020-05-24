@@ -128,7 +128,7 @@ button:hover{
   display: block;
   width: 23%;
   margin: 0.5% 0 0 1%;
-  /* border: 2px solid rgb(182, 202, 202); */
+  border: 2px solid rgb(182, 202, 202);
 }
 .content--picComponentPic{
   width: 100%;
@@ -136,23 +136,26 @@ button:hover{
 .content--picComponentInfo{
   display: flex;
   flex-wrap: wrap;
-  margin: 5px;
+  justify-content: space-evenly;
   color: rgb(222, 228, 228);
+  margin: 5px;
 }
 .content--picComponentInfoItem{
   font-size: 0.8em;
+  border-bottom: 1px solid white;
 }
 .content--picComponentPrice{
   font-size: 0.95em;
   color: rgb(222, 228, 228);
   text-align: right;
+  margin: 5px;
 }
 .content--picComponentPriceRRP{
   color: blanchedalmond;
 }
 .content--picComponentPriceNow{
-  color:rgb(223, 142, 105);
-  font-weight: bolder;
+  color:rgb(235, 140, 125);
+  font-weight: 900;
 }
 
 

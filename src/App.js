@@ -18,23 +18,27 @@ import Pictures from './Pictures';
 
 function App() {
 
-  /* New Arrivals (product info table) */
-  const newArrivals = [
+  /* All product table */
+  const allPics = [
     {
       id: 1,
       picName: 'SkyHunter',
       picSize: '120x160',
       rrpPrice: '$120',
       picType:'Print',
+      location: 'bedroom',
+      new: true,
       nowPrice: '',
       picSrc: SkyHunter
     },{
       id: 2,
       picName: 'TreeSnowSun',
       picSize: '100x130',
-      rrpPrice: '$100',
+      rrpPrice: '$110',
       picType:'Water',
-      nowPrice: '',
+      location:'livingRoom',
+      new: false,
+      nowPrice: '$100',
       picSrc: TreeSnowSun
     },{
       id: 3,
@@ -42,6 +46,8 @@ function App() {
       picSize: '90x150',
       rrpPrice: '$140',
       picType:'Print',
+      location:'bedroom',
+      new: true,
       nowPrice: '',
       picSrc: FieldSunset
     },{
@@ -50,6 +56,8 @@ function App() {
       picSize: '100x160',
       rrpPrice: '$150',
       picType:'Oil',
+      location:'livingRoom',
+      new: true,
       nowPrice: '',
       picSrc: TreeSnowMist
     },{
@@ -58,7 +66,9 @@ function App() {
       picSize: '90x150',
       rrpPrice: '$140',
       picType:'Print',
-      nowPrice: '',
+      location:'kitchen',
+      new: false,
+      nowPrice: '$125',
       picSrc: FieldSunset
     },{
       id: 6,
@@ -66,62 +76,8 @@ function App() {
       picSize: '100x160',
       rrpPrice: '$150',
       picType:'Oil',
-      nowPrice: '',
-      picSrc: MountMist
-    },{
-      id: 7,
-      picName: 'SkyHunter',
-      picSize: '120x160',
-      rrpPrice: '$120',
-      picType:'Print',
-      nowPrice: '',
-      picSrc: SkyHunter
-    }
-  ];
-
-  const newList = newArrivals.map(pic => <Pictures key={pic.id} pic={pic} />);
-
-
-  /* Living Room (product info table) */
-  const livingRoom = [
-    {
-      id: 1,
-      picName: 'SkyHunter',
-      picSize: '120x160',
-      rrpPrice: '$120',
-      picType:'Print',
-      nowPrice: '$100',
-      picSrc: SkyHunter
-    },{
-      id: 2,
-      picName: 'TreeSnowSun',
-      picSize: '100x130',
-      rrpPrice: '$100',
-      picType:'Water',
-      nowPrice: '$90',
-      picSrc: TreeSnowSun
-    },{
-      id: 3,
-      picName: 'FieldSunset',
-      picSize: '90x150',
-      rrpPrice: '$140',
-      picType:'Print',
-      nowPrice: '$120',
-      picSrc: FieldSunset
-    },{
-      id: 4,
-      picName: 'TreeSnowMist',
-      picSize: '100x160',
-      rrpPrice: '$150',
-      picType:'Oil',
-      nowPrice: '$130',
-      picSrc: TreeSnowMist
-    },{
-      id: 5,
-      picName: 'MountMist',
-      picSize: '100x160',
-      rrpPrice: '$150',
-      picType:'Oil',
+      location:'kitchen',
+      new: false,
       nowPrice: '$130',
       picSrc: MountMist
     },{
@@ -130,6 +86,8 @@ function App() {
       picSize: '120x160',
       rrpPrice: '$120',
       picType:'Print',
+      location:'bedroom',
+      new: false,
       nowPrice: '$100',
       picSrc: SkyHunter
     },{
@@ -138,7 +96,9 @@ function App() {
       picSize: '100x130',
       rrpPrice: '$100',
       picType:'Water',
-      nowPrice: '$90',
+      location:'bedroom',
+      new: true,
+      nowPrice: '',
       picSrc: TreeSnowSun
     },{
       id: 9,
@@ -146,157 +106,57 @@ function App() {
       picSize: '90x150',
       rrpPrice: '$140',
       picType:'Print',
+      location:'kitchen',
+      new: false,
       nowPrice: '$120',
       picSrc: FieldSunset
-    },{
-      id: 6,
-      picName: 'Twig',
-      picSize: '100x160',
-      rrpPrice: '$150',
-      picType:'Oil',
-      nowPrice: '$130',
-      picSrc: Twig
     },{
       id: 10,
       picName: 'TreeSnowMist',
       picSize: '100x160',
       rrpPrice: '$150',
       picType:'Oil',
-      nowPrice: '$130',
+      location:'bedroom',
+      new: false,
+      nowPrice: '$125',
       picSrc: TreeSnowMist
     },{
       id: 11,
-      picName: 'MountMist',
-      picSize: '100x160',
-      rrpPrice: '$150',
-      picType:'Oil',
-      nowPrice: '$130',
-      picSrc: MountMist
+      picName: 'FieldSunset',
+      picSize: '90x150',
+      rrpPrice: '$140',
+      picType:'Print',
+      location:'livingRoom',
+      new: false,
+      nowPrice: '$120',
+      picSrc: FieldSunset
     },{
       id: 12,
-      picName: 'Twig',
-      picSize: '100x160',
-      rrpPrice: '$150',
-      picType:'Oil',
-      nowPrice: '$130',
-      picSrc: Twig
-    }
-  ];
-
-  const livingList = livingRoom.map(pic => <Pictures key={pic.id} pic={pic} />);
-
-
-  /* Bedroom (product info table) */
-  const bedroom = [
-    {
-      id: 1,
-      picName: 'SkyHunter',
-      picSize: '120x160',
-      rrpPrice: '$120',
-      picType:'Print',
-      nowPrice: '$100',
-      picSrc: SkyHunter
-    },{
-      id: 2,
-      picName: 'TreeSnowSun',
-      picSize: '100x130',
-      rrpPrice: '$100',
-      picType:'Water',
-      nowPrice: '$90',
-      picSrc: TreeSnowSun
-    },{
-      id: 3,
-      picName: 'FieldSunset',
-      picSize: '90x150',
-      rrpPrice: '$140',
-      picType:'Print',
-      nowPrice: '$120',
-      picSrc: FieldSunset
-    },{
-      id: 4,
-      picName: 'TreeSnowMist',
-      picSize: '100x160',
-      rrpPrice: '$150',
-      picType:'Oil',
-      nowPrice: '$130',
-      picSrc: TreeSnowMist
-    },{
-      id: 5,
       picName: 'MountMist',
       picSize: '100x160',
       rrpPrice: '$150',
       picType:'Oil',
-      nowPrice: '$130',
-      picSrc: MountMist
-    }
-  ];
-
-  const bedroomList = bedroom.map(pic => <Pictures key={pic.id} pic={pic}/>);
-
-
-  /* Kitchen (product info table)  */
-  const kitchen = [
-    {
-      id: 1,
-      picName: 'SkyHunter',
-      picSize: '120x160',
-      rrpPrice: '$120',
-      picType:'Print',
-      nowPrice: '$100',
-      picSrc: SkyHunter
-    },{
-      id: 2,
-      picName: 'TreeSnowSun',
-      picSize: '100x130',
-      rrpPrice: '$100',
-      picType:'Water',
-      nowPrice: '$90',
-      picSrc: TreeSnowSun
-    },{
-      id: 3,
-      picName: 'FieldSunset',
-      picSize: '90x150',
-      rrpPrice: '$140',
-      picType:'Print',
-      nowPrice: '$120',
-      picSrc: FieldSunset
-    },{
-      id: 4,
-      picName: 'TreeSnowMist',
-      picSize: '100x160',
-      rrpPrice: '$150',
-      picType:'Oil',
-      nowPrice: '$130',
-      picSrc: TreeSnowMist
-    },{
-      id: 5,
-      picName: 'MountMist',
-      picSize: '100x160',
-      rrpPrice: '$150',
-      picType:'Oil',
-      nowPrice: '$130',
+      location:'kitchen',
+      new: true,
+      nowPrice: '',
       picSrc: MountMist
     },{
-      id: 6,
+      id: 13,
       picName: 'Twig',
-      picSize: '100x160',
-      rrpPrice: '$150',
-      picType:'Oil',
-      nowPrice: '$130',
-      picSrc: Twig
-    },{
-      id: 7,
-      picName: 'SkyHunter',
       picSize: '120x160',
       rrpPrice: '$120',
       picType:'Print',
-      nowPrice: '$100',
-      picSrc: SkyHunter
+      location:'bedroom',
+      new: false,
+      nowPrice: '$105',
+      picSrc: Twig
     }
   ];
 
-  const kitchenList = kitchen.map(pic => <Pictures key={pic.id} pic={pic} />);
-
+  const newList = allPics.map(pic => {if(pic.new===true) return <Pictures key={pic.id} pic={pic}/>});
+  const livingList = allPics.map(pic => {if(pic.location==='livingRoom') return <Pictures key={pic.id} pic={pic}/>});
+  const bedroomList = allPics.map(pic => {if(pic.location==='bedroom') return <Pictures key={pic.id} pic={pic}/>});
+  const kitchenList = allPics.map(pic => {if(pic.location==='kitchen') return <Pictures key={pic.id} pic={pic}/>});
 
   return (
     <div className="App" id="top">
@@ -377,7 +237,7 @@ function App() {
             <ul>Contact us:</ul>
             <li>Follow us :&nbsp;
               <img src={Facebook} className="info--logo"></img>&nbsp;
-              <a href='https://www.facebook.com/glorytimespainting' className="info--link" target="_blank">GloryTimes</a>
+              <a href='https://www.facebook.com/glorytimespainting/shop/' className="info--link" target="_blank">GloryTimes</a>
             </li>
             <li>Phone:  +61 434 112 658 (Steven)</li>
             <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+61 434 848 628 (Beth)</li>
